@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'testSelenium'
+version '1.0'
+
+sourceCompatibility = 16
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.12.1'
+}
