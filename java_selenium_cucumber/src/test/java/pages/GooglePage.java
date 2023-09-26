@@ -2,7 +2,7 @@ package pages;
 
 public class GooglePage extends BasePage {
 
-    public GooglePage(){
+    public GooglePage (){
         super(driver);
     }
 

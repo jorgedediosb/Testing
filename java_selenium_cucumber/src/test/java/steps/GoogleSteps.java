@@ -11,7 +11,7 @@ public class GoogleSteps {
     // con ^ y $ decimos a cucumber que este paso es "sólo esto"
     @Given("^I am on the Google search page$")
     public void navigateToGoogle(){
-    google.navigateToGoogle();
+        google.navigateToGoogle();
     }
 
     @When("^I enter a search criteria$")
