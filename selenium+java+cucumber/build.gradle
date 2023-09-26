@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'testSelenium'
+version '1.0'
+
+sourceCompatibility = 17
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.12.1'
+    
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '4.2.0'
+    testImplementation 'io.cucumber:cucumber-junit:4.2.0'
+    
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
+}

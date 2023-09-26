@@ -4,7 +4,7 @@ package steps;
 import cucumber.api.java.en.*;
 
 public class GoogleSteps {
-    // con ^ y $ decimos a cucumber que este paso es "sólo esto"
+
     @Given("^I am on the Google search page$")
     public void navigateTogoogle(){
 

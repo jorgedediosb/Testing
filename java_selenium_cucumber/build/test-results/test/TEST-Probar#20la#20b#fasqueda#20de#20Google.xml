@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Probar la búsqueda de Google" tests="1" skipped="1" failures="0" errors="0" timestamp="2023-09-25T18:32:52" hostname="Jorges-MacBook-Pro-13.local" time="0.014">
+<testsuite name="Probar la búsqueda de Google" tests="1" skipped="1" failures="0" errors="0" timestamp="2023-09-26T11:46:30" hostname="Jorges-MacBook-Pro-13.local" time="0.018">
   <properties/>
-  <testcase name="As a user I enter a search page" classname="Probar la búsqueda de Google" time="0.014">
+  <testcase name="As a user I enter a search page" classname="Probar la búsqueda de Google" time="0.018">
     <skipped/>
   </testcase>
   <system-out><![CDATA[?[33mU?[0m?[33mU?[0m?[33mU?[0m?[33mU?[0m]]></system-out>
