@@ -7,7 +7,7 @@
 
 1 Scenarios (?[31m1 failed?[0m)
 4 Steps (?[31m1 failed?[0m, ?[36m3 skipped?[0m)
-0m0,121s
+0m0,158s
 
 cucumber.runtime.CucumberException: Failed to instantiate class steps.GoogleSteps
 	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)
