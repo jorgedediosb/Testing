@@ -5,7 +5,9 @@ plugins {
 group 'testSelenium'
 version '1.0'
 
-sourceCompatibility = 13
+//compatibilidad con java:
+sourceCompatibility = 17
+targetCompatibility = 17
 
 repositories {
     mavenCentral()
