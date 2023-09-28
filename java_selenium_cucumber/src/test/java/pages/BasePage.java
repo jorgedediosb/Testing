@@ -1,6 +1,9 @@
 package pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -29,6 +32,10 @@ public class BasePage {
 
     public static void navigateTo(String url){
         driver.get(url);
+    }
+
+    public static void closeBrowser(){
+        driver.quit();
     }
 
     private WebElement Find(String locator){
@@ -96,10 +103,30 @@ public class BasePage {
     }
 
     public void dismissAlert(){
+        try{
         driver.switchTo().alert().dismiss();
+        }catch(NoAlertPresentException e){
+            e.printStackTrace();
+        }
     }
 
     public String textFromElement(String locator){
         return Find(locator).getText();
+    }
+
+    public boolean elementEnable(String locator){
+        return Find(locator).isEnabled();
+    }
+
+    public boolean elementIsDisplayed(String locator){
+        return Find(locator).isDisplayed();
+    }
+
+    public boolean elementIsSelected(String locator){
+        return Find(locator).isSelected();
+    }
+
+    public List<WebElement> bringMeAllElements(String locator){
+        return driver.findElements(By.className(locator));
     }
 }
