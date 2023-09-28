@@ -1,5 +1,7 @@
 package steps;
 
+import org.junit.Assert;
+
 // importamos 'Given', 'When', 'Then', etc. El '*' hace que importe todos de una vez
 import cucumber.api.java.en.*;
 import pages.GooglePage;
@@ -26,7 +28,7 @@ public class GoogleSteps {
 
     @Then("^the results match the criteria$")
     public void validateResults(){
-
+        Assert.assertEquals("texto que validamos", google.firstResult());
     }
     
 }

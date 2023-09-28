@@ -7,7 +7,7 @@
 
 1 Scenarios (?[31m1 failed?[0m)
 4 Steps (?[31m1 failed?[0m, ?[36m3 skipped?[0m)
-0m0,150s
+0m0,160s
 
 cucumber.runtime.CucumberException: Failed to instantiate class steps.GoogleSteps
 	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)
@@ -66,7 +66,7 @@ Caused by: java.lang.reflect.InvocationTargetException
 	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)
 	... 48 more
 Caused by: java.lang.ExceptionInInitializerError
-	at steps.GoogleSteps.<init>(GoogleSteps.java:9)
+	at steps.GoogleSteps.<init>(GoogleSteps.java:11)
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	... 51 more
 Caused by: java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
@@ -77,7 +77,7 @@ Caused by: java.lang.IllegalStateException: The path to the driver executable mu
 	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
 	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
-	at pages.BasePage.<clinit>(BasePage.java:15)
+	at pages.BasePage.<clinit>(BasePage.java:21)
 	... 53 more
 
 
