@@ -19,6 +19,25 @@ public class BasePage {
     private static WebDriverWait wait;
     private static Actions action;
 
+    /*  instancia de WebDriver para abrir el sitio web ES CORRECTO???
+    public class MiClase {
+
+        public static void main(String[] args) {
+            // Establece la ubicación del controlador de Chrome
+            System.setProperty("webdriver.chrome.driver", "/Users/jorge/Documents/chromedriver-mac-x64/chromedriver");
+    
+            // Crea una instancia de WebDriver (ChromeDriver en este caso)
+            WebDriver driver = new ChromeDriver();
+    
+            // Abre el sitio web en el navegador
+            driver.get("https://www.google.com/");
+    
+            // Cierra el navegador
+            driver.quit();
+        }
+    }
+    */
+
     static {
         ChromeOptions chromeOptions = new ChromeOptions();
         driver = new ChromeDriver(chromeOptions);
@@ -39,7 +58,7 @@ public class BasePage {
     }
 
     private WebElement Find(String locator){
-        // hace una espera "explícita" hasta que aparezca el elemento (es mejor que usar el comando sleep)
+        // Espera "explícita" hasta que aparezca el elemento (es mejor que usar el comando sleep, QUE NO DEBE USARSE)
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
 

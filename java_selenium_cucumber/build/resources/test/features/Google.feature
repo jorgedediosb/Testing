@@ -1,3 +1,4 @@
+@Test
 Feature: Try Google Search
 
 Scenario: As a user I enter a search page
