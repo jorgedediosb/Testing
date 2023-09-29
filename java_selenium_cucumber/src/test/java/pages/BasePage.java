@@ -53,6 +53,10 @@ public class BasePage {
         driver.get(url);
     }
 
+    public void goToLinkText(String LinkText){
+        driver.findElement(By.linkText(LinkText)).click();
+    }
+
     public static void closeBrowser(){
         driver.quit();
     }

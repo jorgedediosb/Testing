@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="runner.runner" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-28T15:15:47" hostname="Jorges-MacBook-Pro-13.local" time="0.0">
+<testsuite name="runner.runner" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-29T09:01:00" hostname="Jorges-MacBook-Pro-13.local" time="0.001">
   <properties/>
-  <testcase name="classMethod" classname="runner.runner" time="0.0">
+  <testcase name="classMethod" classname="runner.runner" time="0.001">
     <failure message="java.lang.NoClassDefFoundError: Could not initialize class pages.BasePage" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class pages.BasePage
 	at runner.runner.cleanDriver(runner.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -88,7 +88,7 @@ src/test/resources/features/Google.feature:4 # As a user I enter a search page
 
 1 Scenarios (1 failed)
 4 Steps (1 failed, 3 skipped)
-0m0,143s
+0m0,117s
 
 cucumber.runtime.CucumberException: Failed to instantiate class steps.GoogleSteps
 	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)
